@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Esseiva — Data Analytics para e-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1B2A4A;
+            --terracotta: #E07A5F;
+            --bg: #FBFAF8;
+            --text-light: #3a4a6b;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--navy);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid rgba(27, 42, 74, 0.1);
+        }
+
+        section:last-child {
+            border-bottom: none;
+            padding-bottom: 6rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--navy);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--navy);
+        }
+
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: var(--navy);
+        }
+
+        ul {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--terracotta);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            font-size: 1.125rem;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #c9684f;
+        }
+
+        .cta-link {
+            color: var(--terracotta);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .cta-link:hover {
+            text-decoration: underline;
+        }
+
+        .pricing {
+            background-color: rgba(27, 42, 74, 0.05);
+            padding: 1rem;
+            border-left: 4px solid var(--navy);
+            font-weight: 600;
+            color: var(--navy);
+            margin: 2rem 0;
+        }
+
+        .case-study {
+            background-color: #ffffff;
+            border: 1px solid rgba(27, 42, 74, 0.1);
+            padding: 2rem;
+            border-radius: 4px;
+            margin-top: 2rem;
+        }
+
+        .case-study h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: var(--navy);
+        }
+
+        .case-study p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .disclaimer {
+            font-size: 0.875rem;
+            color: #6b7a99;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 3rem 0;
+            }
+        }
+
+        /* HERO con imagen */
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-image {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+        .hero-text .eyebrow {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 1rem;
+            display: block;
+        }
+        @media (max-width: 680px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .hero-image-wrap { order: -1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <span class="eyebrow">Data Analytics para e-commerce</span>
+                    <h1>Saber qué vender, qué stock dejar de pedir y cuándo reponer</h1>
+                    <p>Ayudo a tiendas online a entender qué se vende, qué stock se queda parado y cómo prever ventas, sin depender de Excels manuales.</p>
+                    <a href="mailto:matthewesseiva@proton.me" class="btn">Escríbeme &rarr;</a>
+                </div>
+                <div class="hero-image-wrap">
+                    <img src="img/hero.png" alt="Dueño de e-commerce revisando datos de ventas y stock" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- El Dolor -->
+        <section>
+            <h2>¿Te suena esto?</h2>
+            <p>Tienes ventas, tienes stock, tienes facturas — pero todo está en sitios distintos. Cuando quieres decidir si pedir más de un producto o dejar de vender otro, lo haces por intuición, porque montar el informe te llevaría un día entero.</p>
+            <ul>
+                <li>No sabes qué productos te dan margen de verdad y cuáles te lo están comiendo sin que te des cuenta.</li>
+                <li>Tu stock se decide tarde: repones cuando ya falta, o descubres que llevas meses pagando almacén por producto que no se mueve.</li>
+                <li>Los datos están en tu tienda online, en un Excel y en la facturación — y nadie los ha juntado nunca.</li>
+                <li>Cada semana tomas decisiones importantes sin tener la información necesaria para tomarlas bien.</li>
+            </ul>
+        </section>
+
+        <!-- El Método -->
+        <section>
+            <h2>Cómo trabajo</h2>
+            <p>Reviso cómo gestionas hoy tus datos de ventas, productos y stock. Identifico dónde está la información, qué se puede cruzar y qué decisiones estás tomando a ciegas.</p>
+            <p>Con eso construyo un diagnóstico claro: qué KPIs deberías estar mirando, cuáles no te dicen nada útil, y cuál debería ser tu siguiente paso concreto.</p>
+            <p>Sin dashboards innecesarios. Sin tecnología por encima de lo que tu negocio necesita ahora mismo.</p>
+        </section>
+
+        <!-- La Transformación y Caso -->
+        <section>
+            <h2>Qué cambia después</h2>
+            <p>Después de trabajar juntos sabes exactamente qué productos reponer y cuándo, cuáles dejar de pedir, y qué categoría sostiene realmente tu negocio.</p>
+            <p>Tus decisiones de stock, compras y catálogo dejan de depender de la intuición — y empiezan a depender de lo que tus propios datos llevan tiempo intentando decirte.</p>
+
+            <div class="case-study">
+                <h3>Caso de práctica</h3>
+                <p>Catálogo de más de 3.000 productos, varios canales de venta, años de histórico sin analizar. Resultado: tendencia de crecimiento del 82% identificada, catálogo clasificado en 4 grupos según comportamiento real, previsión de ventas semanal con ~97% de precisión.</p>
+                <p class="disclaimer">(Caso elaborado con datos públicos de retail, adaptado a escenario de e-commerce. No corresponde a un cliente real.)</p>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section>
+            <h2>¿Hablamos?</h2>
+            <p>Si esto te suena familiar, escríbeme. Cuéntame cómo gestionas hoy tus datos de ventas y stock, y te digo en 24 horas si tiene sentido que hablemos.</p>
+            <p><a href="mailto:matthewesseiva@proton.me" class="cta-link">matthewesseiva@proton.me</a></p>
+            
+            <div class="pricing">
+                Diagnóstico Data & Reporting — 450€ — entrega en 3-5 días.
+            </div>
+
+            <a href="mailto:matthewesseiva@proton.me" class="btn">Escríbeme &rarr;</a>
+        </section>
+    </div>
+
+</body>
+</html>
